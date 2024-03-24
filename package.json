@@ -20,6 +20,12 @@
       "language": "sgezcc",
       "scopeName": "source.ezcc",
       "path": "./syntaxes/sgezcc.tmLanguage.json"
-    }]
+    }],
+    "snippets": [
+      {
+        "language": "sgezcc",
+        "path": "./snippets/sgezcc.snippets.json"
+      }
+    ]
   }
 }

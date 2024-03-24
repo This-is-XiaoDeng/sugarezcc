@@ -3,27 +3,41 @@
 	"name": "SugarEZCC",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#splits"
 		},
 		{
-			"include": "#strings"
+			"include": "#headers"
+		},
+		{
+			"include": "#choices"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.sgezcc",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.sgezcc",
-			"begin": "\"",
-			"end": "\"",
+		"splits": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.sgezcc",
-					"match": "\\\\."
+					"name": "keyword.operator.new",
+					"match": "<sp>"
+				}
+			]
+		},
+		"headers": {
+			"patterns": [
+				{
+					"name": "keyword.control.sgezcc",
+					"match": "^(标题|简介|星级)："
+				},
+				{
+					"name": "string.quoted.double.sgezcc",
+					"match": "(?<=(标题|简介|星级)：).*?(?=：|$)"
+				}
+			]
+		},
+		"choices": {
+			"patterns": [
+				{
+					"name": "comment.line.sgezcc",
+					"match": "^ - .+"
 				}
 			]
 		}
