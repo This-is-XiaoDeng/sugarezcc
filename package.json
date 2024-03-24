@@ -1,0 +1,25 @@
+{
+  "name": "sugarezcc",
+  "displayName": "SugarEZCC",
+  "description": "Sugar Easy ContChat Plugin",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sgezcc",
+      "aliases": ["SugarEZCC", "sgezcc"],
+      "extensions": [".ezcc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sgezcc",
+      "scopeName": "source.ezcc",
+      "path": "./syntaxes/sgezcc.tmLanguage.json"
+    }]
+  }
+}
