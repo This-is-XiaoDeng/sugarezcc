@@ -16,7 +16,7 @@
 		"splits": {
 			"patterns": [
 				{
-					"name": "keyword.operator.new",
+					"name": "keyword.operator.new.sgezcc",
 					"match": "<sp>"
 				}
 			]
@@ -30,14 +30,18 @@
 				{
 					"name": "string.quoted.double.sgezcc",
 					"match": "(?<=(标题|简介|星级)：).*?(?=：|$)"
+				},
+				{
+					"name": "invalid.deprecated.sgezcc",
+					"match": "^星级：[^0-5]+$"
 				}
 			]
 		},
 		"choices": {
 			"patterns": [
 				{
-					"name": "comment.line.sgezcc",
-					"match": "^ - .+"
+					"name": "invalid.deprecated.sgezcc",
+					"match": "^ - .+<sp>.+"
 				}
 			]
 		}
