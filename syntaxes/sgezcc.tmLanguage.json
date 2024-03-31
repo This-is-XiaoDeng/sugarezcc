@@ -24,24 +24,24 @@
 		"headers": {
 			"patterns": [
 				{
+					"name": "invalid.deprecated.sgezcc",
+					"match": "^星级：[^0-5]+$"
+				},
+				{
 					"name": "keyword.control.sgezcc",
 					"match": "^(标题|简介|星级)："
 				},
 				{
 					"name": "string.quoted.double.sgezcc",
 					"match": "(?<=(标题|简介|星级)：).*?(?=：|$)"
-				},
-				{
-					"name": "invalid.deprecated.sgezcc",
-					"match": "^星级：[^0-5]+$"
 				}
 			]
 		},
 		"choices": {
 			"patterns": [
 				{
-					"name": "invalid.deprecated.sgezcc",
-					"match": "^ - .+<sp>.+"
+					"name": "comment.line.sgezcc",
+					"match": "^ - .+"
 				}
 			]
 		}

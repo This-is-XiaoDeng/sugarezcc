@@ -2,6 +2,8 @@
   "name": "sugarezcc",
   "displayName": "SugarEZCC",
   "description": "Sugar Easy ContChat Plugin",
+  "repository": "github:This-is-XiaoDeng/sugarezcc",
+  "publisher": "XiaoDeng3386",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
